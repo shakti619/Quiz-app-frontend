@@ -4,9 +4,7 @@ import quizCompeteImg from "../assets/quiz-complete.png";
 export default function Quiz() {
   const [userAnswers, setUserAnswers] = useState([]);
   const activeQuestionIndex = userAnswers.length;
-  const shuffledAnswers = QUESTIONS[activeQuestionIndex].answers.sort(
-    () => Math.random() - 0.5
-  );
+
   const quizIsOver = activeQuestionIndex === QUESTIONS.length;
 
   function handleAnswerClick(answer) {
@@ -23,6 +21,9 @@ export default function Quiz() {
       </div>
     );
   }
+  const shuffledAnswers = QUESTIONS[activeQuestionIndex].answers.sort(
+    () => Math.random() - 0.5
+  );
 
   return (
     <div id="quiz">
