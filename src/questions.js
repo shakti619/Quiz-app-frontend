@@ -12,7 +12,7 @@ export default [
   {
     id: "q2",
     text: "what is the purpose of life",
-    answers: ["Daaru", "launddiya.", "Ganja", "All."],
+    answers: ["maze", "passion", "pata nhi", "All."],
   },
   {
     id: "q3",
